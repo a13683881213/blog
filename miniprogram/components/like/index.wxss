@@ -1,0 +1,24 @@
+/* 组件只可以继承少数的全局样式  可继承font color*/
+/* 组件最好不要留空白的间距 */
+/* 这个爱心组件的宽度是自适应还是固定  inline-flex*/
+
+.container{
+	display: inline-flex;		  
+	flex-direction: row;
+	padding: 30rpx;
+}
+
+.container image{
+	width:32rpx;
+	height: 28rpx;
+}
+.container text{
+/* 	font-family:""; */
+	/* 苹方字体设置 */
+	     font-size:20rpx;
+		 line-height:20rpx;
+		 color: #cc7c3b;
+		 position: relative;
+		 bottom: 18rpx;
+		 left:8rpx;
+}

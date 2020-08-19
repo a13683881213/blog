@@ -1,0 +1,41 @@
+ <div class="container">
+	
+          <h2 class="h">{{product.name}}</h2>
+		  <view class="text1">
+          <p class="info">相机全新升级 / 960帧超慢动作 / 手持超级夜景 / 全球首款双频GPS / 骁龙845处理器 / 红<br/>外人脸解锁 / AI变焦双摄 / 三星 AMOLED 屏</p>
+          </view>
+		  <text class="price">{{product.price}}元</text> 
+          <view class="line"></view>
+          <view class="addr-contanier" >
+		 	 
+            <image class="icon"   src="../../images/detail/icon-loc.png"></image>
+            <text class="addr">北京 北京市 朝阳区 安定门街道</text>
+            <text class="stock">有现货</text>
+          </view>
+		   <h2 class="h">选择版本</h2>
+          <view class="version-container">
+       
+					<view class="fl {{version==1?'checked':''}}" bindtap="version1">6GB+64GB 全网通</view>
+					<view class="fl {{version==2?'checked':''}}" bindtap="version2">4GB+64GB 移动4G</view>
+          </view>
+		    <h2  class="h">选择颜色</h2>
+				<view class="version-container">
+				       
+									<view class="fl {{color==1?'checked':''}}" bindtap="color1">深灰色</view>
+									<view class="fl {{color==2?'checked':''}}" bindtap="color2">红色</view>
+				</view>
+         
+         <view class="phone">
+			<view>
+              <text>{{product.name}} {{version==1?'6GB+64GB 全网通':'4GB+64GB 移动4G'}} 深灰色</text>
+            </view>
+			<view>
+				<text>{{product.price}}元</text>
+			</view>
+          </view>
+     
+		
+          <div class="btn">
+            <a href="javascript:;"  bindtap="addCart">加入购物车</a>
+          </div>
+  </div>

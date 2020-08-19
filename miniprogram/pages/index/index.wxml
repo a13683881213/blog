@@ -1,0 +1,21 @@
+
+<view  class="header">
+	<view  class="shou"    wx:if="{{!islogin}}">授权</view>
+	<view  class="shou"    wx:if="{{islogin}}">已授权</view>
+	<view  class="top-login"    wx:if="{{islogin}}" bindtap="Login" >登录</view>
+		<v-date class="date"></v-date>
+			<v-button  open-type="getUserInfo" class="login" bind:getuserinfo="getLogin">	
+					<image    wx:if="{{!islogin}}"  class="click_me" src="../../images/login/login.png" slot="img"></image>
+			</v-button>
+		
+	<v-like  class="like "></v-like>
+		<v-button  open-type="share" class="share-posi">
+			<image  class="share-img"  slot="img"    src="../../images/header/fen.png"></image>
+		</v-button>
+</view>
+<view class="sub-contanier">
+	<block wx:for="{{proList}}">
+		  <v-product   pro="{{item}}" class="pro"  data-gid="{{item.id}}"  bindtap="mai"></v-product>
+	</block>
+</view>
+

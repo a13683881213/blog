@@ -1,0 +1,67 @@
+.header{
+	width: 100%;
+	/* 避免奇怪现象 */
+	display: flex;
+	flex-direction: row;
+	background-color: #ffffff;
+	align-items: center;
+	position: relative;
+	/* justify-content: space-between; */
+}
+.date{
+	margin-top: 10rpx;
+	flex: 1;
+}
+
+.body{
+	display: flex;
+	flex-direction: column;
+	
+	align-items: center;
+}
+.nav{
+	margin-top: 150rpx;
+}
+/* flex container flex item */
+.share-posi{
+	
+}
+.share-img{
+	width: 30rpx;
+	height: 30rpx;
+}
+.sub-contanier{
+		background-color: #ffffff;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+}
+.pro{
+	flex: 0 1 auto;
+}
+.login{
+	width: 200rpx;
+	height: 30rpx;
+    background-color: #55e9f6;	
+	border-radius: 30rpx;
+	box-sizing: border-box;
+	padding: 0 0 50rpx 0;
+}
+.shou{
+	position: absolute;
+	left: 490rpx;
+}
+.click_me{
+	width: 150rpx;
+	height:50rpx;
+	margin-bottom: 10rpx;
+}
+.top-login{
+	width: 100rpx;
+	position: absolute;
+	left: 200rpx;
+	background-color: #55e9f6;
+	border-radius: 30rpx;
+	text-align: center;
+}

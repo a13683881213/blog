@@ -1,0 +1,13 @@
+<view class="container" > 
+	  <image  class="img1" src="{{pro.mainImage}}"></image>
+	  <view class="des">
+		  
+		    <text  class="title">{{pro.name}}</text>
+	          <text  class="subtitle">{{pro.subtitle}}</text>   
+			   <view class="mai">
+				   <image  class="img2" src="../../images/index/mai.png"></image>
+					<text  class="price">￥{{pro.price}}</text>
+				</view>
+	 </view> 	
+	
+</view>

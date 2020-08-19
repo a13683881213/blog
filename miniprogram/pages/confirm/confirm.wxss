@@ -1,0 +1,88 @@
+.header{
+	width: 100%;
+	height: 160rpx;
+	background-color: #ffffff;	
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	margin-bottom: 20rpx;
+}
+.log{
+	width: 100rpx;
+	height: 100rpx;
+	background-color:red;
+	margin: 30rpx 0 0  50rpx;
+	
+}
+.cart{
+	font-size: 40rpx;
+	font-weight: bold;
+
+}
+.img{
+	width: 100rpx;
+	height: 100rpx;	
+}
+.text{
+	 display: inline-block;
+/* 	 margin-top: 100rpx; */
+	margin: 0 0 0 50rpx ;
+}
+.body{
+	width: 93%;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+.bo_top{
+	height: 130rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-top: 50rpx;
+}
+.top2{
+	font-size: 20rpx;
+	margin-top: 30rpx;
+}
+.top3{
+	margin-top: 90rpx;
+}
+.line{
+	width: 90%;
+	border: 2rpx solid #ccc;
+	margin: 30rpx 0 30rpx 0;
+}
+.icon-succ{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+			background-color: red;
+            background-size:60px;
+          
+}
+
+.sub{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin:0 0 50rpx 100rpx;
+}
+.sub2{
+	margin-bottom: 30rpx;
+}
+
+.bo_bottom{
+	  height: 200rpx;
+	  width: 90%;
+	  background-color: #ffffff;
+	  margin-top: 50rpx;
+	  margin-left: 50rpx;
+	}
+.share-img{
+	width: 200rpx;
+	height: 100rpx;
+	
+}

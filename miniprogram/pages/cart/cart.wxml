@@ -1,0 +1,41 @@
+<view class="header">
+		  <view class="log">
+			 <image  class="img"  src="../../images/cart/mi-home.png"></image>
+		  </view>
+		   <text class="cart">购物车</text>
+		  <text class="text">请您仔细检查要买的商品</text>
+	 
+</view>
+
+<view class="top">
+		<text>图片</text>
+	   <text>名称</text>
+		 <text class="num">数量</text>
+		  <text>小计</text>
+		   <text>操作</text>
+</view>
+<view>
+	<ul>
+		<li wx:for="{{cart}}">
+			<view class="li">
+				<image class="li_img"  src="{{item.productMainImage}}"></image>
+				<text class="productName">{{item.productName}}</text>
+				<view  class="li_num">
+					<view class="li_cz" data-gid="{{item.productId}}"  bindtap="jian">-</view>
+					<text>{{item.quantity}}</text>
+					<view  class="li_cz" data-gid="{{item.productId}}"  bindtap="add">+</view>
+				</view>
+				<text class="li_price">{{item.productTotalPrice}}</text>
+				<view class="li_dele" data-gid="{{item.productId}}"   bindtap="del">删除</view>
+			</view>
+			
+		</li>
+	</ul>
+</view>
+<view class="bottom">
+		
+		<text  class="bo-text">共{{cartTotalQuantity}}件商品</text>
+		<text  class="bo-total">合计:{{cartTotalPrice}}元</text>
+		
+	<view class="bo-order" bindtap="go_address" >提交订单</view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+	  
+	  "v-button":"/components/imge-button/index"
+	  
+  }
+}

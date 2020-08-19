@@ -1,0 +1,40 @@
+<view class="header">
+		  <view class="log">
+			 <image  class="img"  src="../../images/cart/mi-home.png"></image>
+		  </view>
+		   <text class="cart">订单确认</text>
+		  <text class="text">请您仔细检查要买的商品</text>
+	 
+</view>
+
+<view class="body">
+	  <view class="bo_top">
+		   <image  class="icon-succ" src="../../images/cart/icon-gou.png"></image>
+		   <view>
+			   <text class="top1">订单提交成功！去付款咯～</text>
+			   <view  class="top2">请在30分内完成支付, 超时后将取消订单</view>
+		   </view>
+		   <text class="top3">应付总额:{{orderDe.payment}}元</text>
+	  </view>
+	 <view class="line"></view>
+	  <view class="bo_sub">
+		  <view  class="sub">
+			  <view class="sub2">订单号: <text class="sub1">{{orderDe.orderNo}}</text></view>
+			   <view class="sub2">收货信息: <text class="sub1">收货人:{{orderDe.receiverName}}
+			   联系方式: {{orderDe.shippingVo.receiverMobile}}
+			   收货地址: {{orderDe.shippingVo.receiverProvince}}  {{orderDe.shippingVo.receiverCity}}  {{orderDe.shippingVo.receiverDistrict}}  {{orderDe.shippingVo.receiverAddress}}  
+			   </text></view>
+			   <view  wx:for="{{orderDe.orderItemVoList}}">
+			    <view class="sub2">商品名称: <text class="sub1">{{item.productName}}</text></view>
+				</view>
+				 <view class="sub2">发票信息: <text class="sub1">{{orderDe.paymentTypeDesc}}</text></view>
+		  </view>
+	  </view>
+</view>
+	  <view class="bo_bottom">
+		   <text>转发给商家</text>
+		   <v-button  open-type="share" class="share-posi">
+		   	<image  class="share-img"  slot="img"    src="../../images/cart/icon-wechat.png"></image>
+		   </v-button>
+		  
+	  </view>

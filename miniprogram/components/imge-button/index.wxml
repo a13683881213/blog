@@ -1,0 +1,7 @@
+<button bind:getuserinfo="onGetUserInfo" open-type='{{openType}}'  plain='{{true}}' class="container">
+  <slot name="img"></slot>
+</button>
+<!--open-type属性变量 -->
+
+
+<!-- button变img  弹出弹框-->

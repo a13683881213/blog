@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+	  "v-date":"/components/date/index",
+	  "v-like":"/components/like/index",
+	  "v-button":"/components/imge-button/index",
+	  "v-product":"/components/product/index"
+  }
+}

@@ -1,0 +1,55 @@
+.header{
+	width: 100%;
+	height: 160rpx;
+	background-color: #ffffff;	
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+.log{
+	width: 100rpx;
+	height: 100rpx;
+	background-color:red;
+	margin: 30rpx 0 0  50rpx;
+	
+}
+.img{
+	width: 100rpx;
+	height: 100rpx;	
+}
+.cart{
+	font-size: 40rpx;
+	font-weight: bold;
+
+}
+.text{
+	 display: inline-block;
+/* 	 margin-top: 100rpx; */
+	margin: 0 0 0 50rpx ;
+}
+.biao{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.input{
+	height: 60rpx;
+	border-bottom: 2rpx solid #ccc;
+	margin-bottom: 10rpx;
+	margin-left: 60rpx;
+}
+.button{
+	 width: 200rpx;
+	 height: 100rpx;
+	 background-color: red;
+	 
+}
+.sub{
+	text-align: center;
+	width: 20%;
+	height: 50rpx;
+	background-color: red;
+	border-radius: 30rpx;
+	margin: 0  0 0 80rpx;
+}

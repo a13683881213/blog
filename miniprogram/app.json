@@ -1,0 +1,42 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/cart/cart",
+        "pages/orders/orders",
+        "pages/detail/detail",
+        "pages/address/index",
+        "pages/confirm/confirm"
+    ],
+    "window": {
+        "backgroundColor": "#ffffff",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#55e9f6",
+        "navigationBarTitleText": "鑫源手机商城",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#55e9f6",
+        "selectedColor": "#0c0c0c",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "./images/tab/classic.png",
+                "selectedIconPath": "./images/tab/classic@highlight.png"
+            },
+            {
+                "pagePath": "pages/cart/cart",
+                "text": "购物车",
+                "iconPath": "./images/tab/book.png",
+                "selectedIconPath": "./images/tab/book@highlight.png"
+            },
+            {
+                "pagePath": "pages/orders/orders",
+                "text": "订单",
+                "iconPath": "./images/tab/classic.png",
+                "selectedIconPath": "./images/tab/classic@highlight.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

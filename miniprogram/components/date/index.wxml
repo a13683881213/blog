@@ -1,0 +1,20 @@
+<!-- <view>
+	<text>NO.</text>
+	<text>{{index2}}</text>
+	<text>|</text>
+	<text>{{month}}</text>
+	<text>{{year}}</text>
+</view>
+ -->
+<view class="container">
+	<view class="No_container">
+		<text class="no">NO.</text>
+		<text class="index">{{index2}}</text>
+		<text class="line"></text>
+	</view>
+	<view class="date_container">
+		<text class="mon">{{month}}</text>
+		<text class="yea">{{year}}</text>
+	</view>
+</view>
+ 

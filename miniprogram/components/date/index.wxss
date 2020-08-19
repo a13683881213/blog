@@ -1,0 +1,40 @@
+/* 不要用#id选择器 */
+/* container的高度是根据最高文字高度确定的 */
+.container{
+	display: inline-flex;
+	flex-direction: row;
+	height:60rpx;
+}
+.No_container{
+	 display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.date_container{
+	display: flex;
+	flex-direction: column;
+}
+.no{
+	font-size: 32rpx;
+}
+.index{
+	 font-size: 60rpx;
+	 line-height: 60rpx;
+	 font-weight: 800;
+	 margin-right: 14rpx;
+}
+.line{
+	height: 44rpx;
+	border-left: 1px solid black;
+	margin-right: 14rpx;
+}
+
+.mon{
+	font-size: 24rpx;
+
+}
+.yea{
+	font-size: 20rpx;
+
+}

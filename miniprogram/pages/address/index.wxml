@@ -1,0 +1,28 @@
+<view class="header">
+		  <view class="log">
+			 <image  class="img"  src="../../images/cart/mi-home.png"></image>
+		  </view>
+		   <text class="cart">收货地址</text>
+		  <text class="text">请您仔细填写收货地址</text>
+</view>
+
+
+<view class="body">
+	 <view class="biao">
+		 <form bindsubmit="formSubmit" bindreset="formResest">
+			收货人姓名:<input name="name"  model:value="{{receiverName}}"   class="input" type="text" placeholder="请输入姓名" />
+			联系方式:<input  name="phone"  model:value="{{receiverMobile}}"   class="input" type="text" placeholder="请输入手机号" />
+			省份:<input name="province"  model:value="{{receiverProvince}}"    class="input" type="text" placeholder="请输入省份" />
+			城市:<input  name="city"    model:value="{{receiverCity}}"     class="input" type="text" placeholder="请输入城市" />
+			区/街道:<input   name="jie"   model:value="{{receiverDistrict}}"  class="input" type="text" placeholder="请输入区/街道" />
+			详细地址:<input name="xiang"   model:value="{{receiverAddress}}"   class="input" type="text" placeholder="请输入详细地址" />
+	
+				<view class="btn-area">
+					<button formType="submit">确认地址</button>
+					<button formType="reset">重置</button>
+				</view>	
+		</form>
+	 </view>
+	 <view  bindtap="subOrder"  class="sub" wx:if="{{isShow}}">提交定单</view>
+
+</view>
